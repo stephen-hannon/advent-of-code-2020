@@ -28,7 +28,7 @@ func main() {
 		} else {
 			newNumber = 0
 		}
-		if (turn & 0xfffff) == 0 || turn == NumTurns {
+		if (turn & 0xfffff) == 0 || turn == 2020 || turn == NumTurns {
 			fmt.Printf("%d.\t%d -> %d\n", turn, prevNum, newNumber)
 		}
 		ages[prevNum] = turn - 1
